@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171226_6qyJfvptENk.info.json.vo.* \
+    20171226_6qyJfvptENk.info.json.ao.* \
+    20171226_6qyJfvptENk.info.json.bo.* \
+    20171226_6qyJfvptENk.info.json.wav 
+
+rm -fr               20171226_6qyJfvptENk.info_dir
+mkdir -p             20171226_6qyJfvptENk.info_dir
+mv 20171226_6qyJfvptENk.info.json 20171226_6qyJfvptENk.info.json.*         20171226_6qyJfvptENk.info_dir/
+
+
+
+mv  20171226_6qyJfvptENk.info_dir/20171226_6qyJfvptENk.info.json.jpg 20171226_6qyJfvptENk.info_dir/20171226_6qyJfvptENk.info.json.webm.mp4.jpg
+
+cat > 20171226_6qyJfvptENk.info_dir/_index.md << EOF3
++++
+title = " 20171226_6qyJfvptENk 平论Live | 毛诞节VS圣诞节，中国向左还是向右？2017-12-26 "
+description = " 12月25日，耶稣诞辰，全世界数十亿人欢度圣诞节，在中国竟然遭遇到或明或暗不同程度的抵制，12月26日，毛泽东诞辰，一些毛的拥趸们大举纪念，中国政府的态度并不明确，社会各阶层价值观混乱，毛诞还是圣诞，向左还是向右，这是一个问题。__《中国危机大逃亡》2017年11月出版，售价99美元（人民币680元），可PayPal付款（weipingqin1980@gmail.com）或者 微信（13818833969）联系购买。目前仅有电子版，一般24小时内发出，感谢支持。__【激赏平论】https://www.paypal.me/highpointinstitute "
+weight = 20
++++
+
+{{< mymp4 mp4="20171226_6qyJfvptENk.info.json.webm.mp4" 
+text="len $(cat 20171226_6qyJfvptENk.info_dir/20171226_6qyJfvptENk.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171226_6qyJfvptENk.info.json.25k.mp4"
+text="len $(cat 20171226_6qyJfvptENk.info_dir/20171226_6qyJfvptENk.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="12月25日，耶稣诞辰，全世界数十亿人欢度圣诞节，在中国竟然遭遇到或明或暗不同程度的抵制，12月26日，毛泽东诞辰，一些毛的拥趸们大举纪念，中国政府的态度并不明确，社会各阶层价值观混乱，毛诞还是圣诞，向左还是向右，这是一个问题。__《中国危机大逃亡》2017年11月出版，售价99美元（人民币680元），可PayPal付款（weipingqin1980@gmail.com）或者 微信（13818833969）联系购买。目前仅有电子版，一般24小时内发出，感谢支持。__【激赏平论】https://www.paypal.me/highpointinstitute" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=6qyJfvptENk" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
