@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171222_12DfJ8hgpg4.info.json.vo.* \
+    20171222_12DfJ8hgpg4.info.json.ao.* \
+    20171222_12DfJ8hgpg4.info.json.bo.* \
+    20171222_12DfJ8hgpg4.info.json.wav 
+
+rm -fr               20171222_12DfJ8hgpg4.info_dir
+mkdir -p             20171222_12DfJ8hgpg4.info_dir
+mv 20171222_12DfJ8hgpg4.info.json 20171222_12DfJ8hgpg4.info.json.*         20171222_12DfJ8hgpg4.info_dir/
+
+
+
+mv  20171222_12DfJ8hgpg4.info_dir/20171222_12DfJ8hgpg4.info.json.jpg 20171222_12DfJ8hgpg4.info_dir/20171222_12DfJ8hgpg4.info.json.webm.mp4.jpg
+
+cat > 20171222_12DfJ8hgpg4.info_dir/_index.md << EOF3
++++
+title = " 20171222_12DfJ8hgpg4 VOA时事大家谈：川普国安战略经济先行，美中贸易战在即？2017-12-21 "
+description = " 美国总统川普星期一公布的国家安全战略称，中国寻求取代美国在印太地区的地位，并且要在该地区重新洗牌，甚至要重组国际经济秩序。有分析称，报告大幅描述中美之间围绕未来的新兴行业，以及谁将掌握控制权问题而正在酝酿的争端；这份报告把美国的外国竞争对手，尤其是中国带来的经济挑战，与传统的国家安全观念合二为一。那么，美国如果要对中国进行经济遏制，将采取哪些手段？这对美中经贸将产生哪些影响？中国方面又将如何应对？中国是否需要反思自己的发展模式？__主持人：雨舟_嘉宾：刘芍佳 秦伟平__《中国危机大逃亡》2017年11月出版，售价99美元（人民币680元），可PayPal付款（weipingqin1980@gmail.com）或者 微信（13818833969）联系购买。目前仅有电子版，一般24小时内发出，感谢支持。__【激赏平论】https://www.paypal.me/highpointinstitute "
+weight = 20
++++
+
+{{< mymp4 mp4="20171222_12DfJ8hgpg4.info.json.webm.mp4" 
+text="len $(cat 20171222_12DfJ8hgpg4.info_dir/20171222_12DfJ8hgpg4.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171222_12DfJ8hgpg4.info.json.25k.mp4"
+text="len $(cat 20171222_12DfJ8hgpg4.info_dir/20171222_12DfJ8hgpg4.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="美国总统川普星期一公布的国家安全战略称，中国寻求取代美国在印太地区的地位，并且要在该地区重新洗牌，甚至要重组国际经济秩序。有分析称，报告大幅描述中美之间围绕未来的新兴行业，以及谁将掌握控制权问题而正在酝酿的争端；这份报告把美国的外国竞争对手，尤其是中国带来的经济挑战，与传统的国家安全观念合二为一。那么，美国如果要对中国进行经济遏制，将采取哪些手段？这对美中经贸将产生哪些影响？中国方面又将如何应对？中国是否需要反思自己的发展模式？__主持人：雨舟_嘉宾：刘芍佳 秦伟平__《中国危机大逃亡》2017年11月出版，售价99美元（人民币680元），可PayPal付款（weipingqin1980@gmail.com）或者 微信（13818833969）联系购买。目前仅有电子版，一般24小时内发出，感谢支持。__【激赏平论】https://www.paypal.me/highpointinstitute" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=12DfJ8hgpg4" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
