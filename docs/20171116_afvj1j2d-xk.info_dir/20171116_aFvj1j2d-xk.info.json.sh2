@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171116_aFvj1j2d-xk.info.json.vo.* \
+    20171116_aFvj1j2d-xk.info.json.ao.* \
+    20171116_aFvj1j2d-xk.info.json.bo.* \
+    20171116_aFvj1j2d-xk.info.json.wav 
+
+rm -fr               20171116_aFvj1j2d-xk.info_dir
+mkdir -p             20171116_aFvj1j2d-xk.info_dir
+mv 20171116_aFvj1j2d-xk.info.json 20171116_aFvj1j2d-xk.info.json.*         20171116_aFvj1j2d-xk.info_dir/
+
+
+
+mv  20171116_aFvj1j2d-xk.info_dir/20171116_aFvj1j2d-xk.info.json.jpg 20171116_aFvj1j2d-xk.info_dir/20171116_aFvj1j2d-xk.info.json.webm.mp4.jpg
+
+cat > 20171116_aFvj1j2d-xk.info_dir/_index.md << EOF3
++++
+title = " 20171116_aFvj1j2d-xk 平论Live | 津巴布韦为何爆发军事政变？93岁总统穆加贝下台了吗？2017-11-16 "
+description = " 三天前，津巴布韦爆发军事政变，军方封锁首都街道，接管国家电视台，软禁独裁总统穆加贝，并发表公开声明，反对执政党内部的权力清洗，有人想要造反吗？还是另有隐情。93岁高龄的强人穆加贝是否会退出历史舞台？被罢免的副总统姆加南古瓦流亡在南非还是北京？是否会成为新的总统？欢迎收看本期特别直播节目。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20171116_aFvj1j2d-xk.info.json.webm.mp4" 
+text="len $(cat 20171116_aFvj1j2d-xk.info_dir/20171116_aFvj1j2d-xk.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171116_aFvj1j2d-xk.info.json.25k.mp4"
+text="len $(cat 20171116_aFvj1j2d-xk.info_dir/20171116_aFvj1j2d-xk.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="三天前，津巴布韦爆发军事政变，军方封锁首都街道，接管国家电视台，软禁独裁总统穆加贝，并发表公开声明，反对执政党内部的权力清洗，有人想要造反吗？还是另有隐情。93岁高龄的强人穆加贝是否会退出历史舞台？被罢免的副总统姆加南古瓦流亡在南非还是北京？是否会成为新的总统？欢迎收看本期特别直播节目。" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=aFvj1j2d-xk" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

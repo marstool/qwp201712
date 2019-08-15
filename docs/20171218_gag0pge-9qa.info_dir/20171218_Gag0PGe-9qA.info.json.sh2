@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171218_Gag0PGe-9qA.info.json.vo.* \
+    20171218_Gag0PGe-9qA.info.json.ao.* \
+    20171218_Gag0PGe-9qA.info.json.bo.* \
+    20171218_Gag0PGe-9qA.info.json.wav 
+
+rm -fr               20171218_Gag0PGe-9qA.info_dir
+mkdir -p             20171218_Gag0PGe-9qA.info_dir
+mv 20171218_Gag0PGe-9qA.info.json 20171218_Gag0PGe-9qA.info.json.*         20171218_Gag0PGe-9qA.info_dir/
+
+
+
+mv  20171218_Gag0PGe-9qA.info_dir/20171218_Gag0PGe-9qA.info.json.jpg 20171218_Gag0PGe-9qA.info_dir/20171218_Gag0PGe-9qA.info.json.webm.mp4.jpg
+
+cat > 20171218_Gag0PGe-9qA.info_dir/_index.md << EOF3
++++
+title = " 20171218_Gag0PGe-9qA RFA中国热评： 从蔡奇“改口”到中国公使的“武统”狂言  2017-12-15 "
+description = " 北京驱赶外来人口的“低端”行动仍在持续，书记蔡奇这个星期面对声讨人权侵犯的公众抗议，也改了口风。而在所谓“世界互联网大会”、“中共与国际政党对话会”之后，中国驻美公使一番“武力统一”台湾的言论，更凸显习近平当局对外姿态的强硬。那么，在所谓的“新时代”下，中国民间是否出现了一种声索公民权利的崭新氛围？而中共影响力持续对外渗透，又引发国际社会怎样的警觉？这次节目，我们就与您聊一聊这些话题。__主持人：何平__嘉宾：胡佳，夏业良，     秦伟平__《中国危机大逃亡》2017年11月出版，售价99美元（人民币680元），可PayPal付款（weipingqin1980@gmail.com）或者 微信（wyycome6）联系购买。目前仅有电子版，一般24小时内发出，感谢支持。__【激赏平论】https://www.paypal.me/highpointinstitute "
+weight = 20
++++
+
+{{< mymp4 mp4="20171218_Gag0PGe-9qA.info.json.webm.mp4" 
+text="len $(cat 20171218_Gag0PGe-9qA.info_dir/20171218_Gag0PGe-9qA.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171218_Gag0PGe-9qA.info.json.25k.mp4"
+text="len $(cat 20171218_Gag0PGe-9qA.info_dir/20171218_Gag0PGe-9qA.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="北京驱赶外来人口的“低端”行动仍在持续，书记蔡奇这个星期面对声讨人权侵犯的公众抗议，也改了口风。而在所谓“世界互联网大会”、“中共与国际政党对话会”之后，中国驻美公使一番“武力统一”台湾的言论，更凸显习近平当局对外姿态的强硬。那么，在所谓的“新时代”下，中国民间是否出现了一种声索公民权利的崭新氛围？而中共影响力持续对外渗透，又引发国际社会怎样的警觉？这次节目，我们就与您聊一聊这些话题。__主持人：何平__嘉宾：胡佳，夏业良，     秦伟平__《中国危机大逃亡》2017年11月出版，售价99美元（人民币680元），可PayPal付款（weipingqin1980@gmail.com）或者 微信（wyycome6）联系购买。目前仅有电子版，一般24小时内发出，感谢支持。__【激赏平论】https://www.paypal.me/highpointinstitute" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=Gag0PGe-9qA" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

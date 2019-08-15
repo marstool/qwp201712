@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171210_i-tM1ugxfGM.info.json.vo.* \
+    20171210_i-tM1ugxfGM.info.json.ao.* \
+    20171210_i-tM1ugxfGM.info.json.bo.* \
+    20171210_i-tM1ugxfGM.info.json.wav 
+
+rm -fr               20171210_i-tM1ugxfGM.info_dir
+mkdir -p             20171210_i-tM1ugxfGM.info_dir
+mv 20171210_i-tM1ugxfGM.info.json 20171210_i-tM1ugxfGM.info.json.*         20171210_i-tM1ugxfGM.info_dir/
+
+
+
+mv  20171210_i-tM1ugxfGM.info_dir/20171210_i-tM1ugxfGM.info.json.jpg 20171210_i-tM1ugxfGM.info_dir/20171210_i-tM1ugxfGM.info.json.mp4.jpg
+
+cat > 20171210_i-tM1ugxfGM.info_dir/_index.md << EOF3
++++
+title = " 20171210_i-tM1ugxfGM 平论Live | 国际人权日，让我们一起朗诵《世界人权宣言》  2017-12-10 "
+description = " 12月10日，国际人权日，这是一期特别节目。1948年代表中国签署《世界人权宣言》的是中华民国政府，1998年，中国政府签署了《公民权利和政治权利公约》，但国务院一直未提交全国人大审议和批准，因此，中国普遍存在人权意识淡薄和各种人权灾难频发等问题，今天，让我们一起来朗诵本宣言，希望更多人了解《世界人权宣言》，努力为改善中国的人权和自由奋斗。__【很抱歉，这期直播出技术状况，画面倾斜，用手机观看横屏即可，请大家海涵】__《中国危机大逃亡》售价99美元/680RMB，_《中国危机路线图》售价9.9美元/68RMB,  需要订购的读者请加售书专用微信Wyycome6咨询购买，目前仅有电子版。或者 PayPal：weipingqin1980@gmail.com 直接付费购买。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20171210_i-tM1ugxfGM.info.json.mp4" 
+text="len $(cat 20171210_i-tM1ugxfGM.info_dir/20171210_i-tM1ugxfGM.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171210_i-tM1ugxfGM.info.json.25k.mp4"
+text="len $(cat 20171210_i-tM1ugxfGM.info_dir/20171210_i-tM1ugxfGM.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="12月10日，国际人权日，这是一期特别节目。1948年代表中国签署《世界人权宣言》的是中华民国政府，1998年，中国政府签署了《公民权利和政治权利公约》，但国务院一直未提交全国人大审议和批准，因此，中国普遍存在人权意识淡薄和各种人权灾难频发等问题，今天，让我们一起来朗诵本宣言，希望更多人了解《世界人权宣言》，努力为改善中国的人权和自由奋斗。__【很抱歉，这期直播出技术状况，画面倾斜，用手机观看横屏即可，请大家海涵】__《中国危机大逃亡》售价99美元/680RMB，_《中国危机路线图》售价9.9美元/68RMB,  需要订购的读者请加售书专用微信Wyycome6咨询购买，目前仅有电子版。或者 PayPal：weipingqin1980@gmail.com 直接付费购买。" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=i-tM1ugxfGM" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

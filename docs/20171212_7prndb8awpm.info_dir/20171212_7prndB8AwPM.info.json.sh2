@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171212_7prndB8AwPM.info.json.vo.* \
+    20171212_7prndB8AwPM.info.json.ao.* \
+    20171212_7prndB8AwPM.info.json.bo.* \
+    20171212_7prndB8AwPM.info.json.wav 
+
+rm -fr               20171212_7prndB8AwPM.info_dir
+mkdir -p             20171212_7prndB8AwPM.info_dir
+mv 20171212_7prndB8AwPM.info.json 20171212_7prndB8AwPM.info.json.*         20171212_7prndB8AwPM.info_dir/
+
+
+
+mv  20171212_7prndB8AwPM.info_dir/20171212_7prndB8AwPM.info.json.jpg 20171212_7prndB8AwPM.info_dir/20171212_7prndB8AwPM.info.json.webm.mp4.jpg
+
+cat > 20171212_7prndB8AwPM.info_dir/_index.md << EOF3
++++
+title = " 20171212_7prndB8AwPM 平论Live | 北京蔡奇新官上任三把火，蠢！蠢！蠢！ 2017-12-12 "
+description = " 作为习近平的爱将，连升三级的中央政治局委员、北京市委书记蔡奇近日动作频频，从驱逐“低端人口”，到拆除招牌重见天际线，还有“煤改气”，新官上任三把火，民怨沸腾，愚蠢至极，现在都不了了之，紧急叫停。深受习近平青睐的蔡奇为何如此施政？未来的政治经济社会局面要复杂万倍，这些高层政府官员如何面对？老百姓该何去何从。__《中国危机大逃亡》售价99美元/680RMB，_《中国危机路线图》售价9.9美元/68RMB,  需要订购的读者请加售书专用微信13818833969咨询购买，目前仅有电子版。或者 PayPal：weipingqin1980@gmail.com 直接付费购买。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20171212_7prndB8AwPM.info.json.webm.mp4" 
+text="len $(cat 20171212_7prndB8AwPM.info_dir/20171212_7prndB8AwPM.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171212_7prndB8AwPM.info.json.25k.mp4"
+text="len $(cat 20171212_7prndB8AwPM.info_dir/20171212_7prndB8AwPM.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="作为习近平的爱将，连升三级的中央政治局委员、北京市委书记蔡奇近日动作频频，从驱逐“低端人口”，到拆除招牌重见天际线，还有“煤改气”，新官上任三把火，民怨沸腾，愚蠢至极，现在都不了了之，紧急叫停。深受习近平青睐的蔡奇为何如此施政？未来的政治经济社会局面要复杂万倍，这些高层政府官员如何面对？老百姓该何去何从。__《中国危机大逃亡》售价99美元/680RMB，_《中国危机路线图》售价9.9美元/68RMB,  需要订购的读者请加售书专用微信13818833969咨询购买，目前仅有电子版。或者 PayPal：weipingqin1980@gmail.com 直接付费购买。" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=7prndB8AwPM" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

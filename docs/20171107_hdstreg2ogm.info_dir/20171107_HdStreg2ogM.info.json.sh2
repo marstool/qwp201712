@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171107_HdStreg2ogM.info.json.vo.* \
+    20171107_HdStreg2ogM.info.json.ao.* \
+    20171107_HdStreg2ogM.info.json.bo.* \
+    20171107_HdStreg2ogM.info.json.wav 
+
+rm -fr               20171107_HdStreg2ogM.info_dir
+mkdir -p             20171107_HdStreg2ogM.info_dir
+mv 20171107_HdStreg2ogM.info.json 20171107_HdStreg2ogM.info.json.*         20171107_HdStreg2ogM.info_dir/
+
+
+
+mv  20171107_HdStreg2ogM.info_dir/20171107_HdStreg2ogM.info.json.jpg 20171107_HdStreg2ogM.info_dir/20171107_HdStreg2ogM.info.json.mp4.jpg
+
+cat > 20171107_HdStreg2ogM.info_dir/_index.md << EOF3
++++
+title = " 20171107_HdStreg2ogM 平论Live  | 继警告明斯基时刻之后，周小川再次重磅发声，中国金融风险危在旦夕？2017-11-07 "
+description = " 2017年10月19日，十九大会议期间，在介绍如何守住不发生系统性金融风险底线时，周小川首次表示要警惕中国明斯基时刻出现。_11月4日，中国央行官网刊发了周小川署名文章《守住不发生系统性金融风险的底线》，再次重磅发声。中国金融风险到底有多高？是否已经危在旦夕？秦伟平与你一起见证。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20171107_HdStreg2ogM.info.json.mp4" 
+text="len $(cat 20171107_HdStreg2ogM.info_dir/20171107_HdStreg2ogM.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171107_HdStreg2ogM.info.json.25k.mp4"
+text="len $(cat 20171107_HdStreg2ogM.info_dir/20171107_HdStreg2ogM.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="2017年10月19日，十九大会议期间，在介绍如何守住不发生系统性金融风险底线时，周小川首次表示要警惕中国明斯基时刻出现。_11月4日，中国央行官网刊发了周小川署名文章《守住不发生系统性金融风险的底线》，再次重磅发声。中国金融风险到底有多高？是否已经危在旦夕？秦伟平与你一起见证。" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=HdStreg2ogM" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

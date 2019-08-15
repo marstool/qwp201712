@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171119_2qbRzr-IUPQ.info.json.vo.* \
+    20171119_2qbRzr-IUPQ.info.json.ao.* \
+    20171119_2qbRzr-IUPQ.info.json.bo.* \
+    20171119_2qbRzr-IUPQ.info.json.wav 
+
+rm -fr               20171119_2qbRzr-IUPQ.info_dir
+mkdir -p             20171119_2qbRzr-IUPQ.info_dir
+mv 20171119_2qbRzr-IUPQ.info.json 20171119_2qbRzr-IUPQ.info.json.*         20171119_2qbRzr-IUPQ.info_dir/
+
+
+
+mv  20171119_2qbRzr-IUPQ.info_dir/20171119_2qbRzr-IUPQ.info.json.jpg 20171119_2qbRzr-IUPQ.info_dir/20171119_2qbRzr-IUPQ.info.json.mp4.jpg
+
+cat > 20171119_2qbRzr-IUPQ.info_dir/_index.md << EOF3
++++
+title = " 20171119_2qbRzr-IUPQ 平论Live | 骗子为何无处不在  2017-11-19 "
+description = " 中国经济持续低迷，社会变革在即，各种骗局层出不穷，骗子为何无处不在？为何还会有那么多人前赴后继上当受骗？如果没有贪欲，被骗的可能性会大大降低，骗财骗色的人就很难得手。对于一些政治骗子，无论是共产主义，还是反共，大家都应该提高警惕，中国的民主转型希望在十四亿人身上，绝不会在某一个或某几个人身上，如果没有抗争，就不会有民主。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20171119_2qbRzr-IUPQ.info.json.mp4" 
+text="len $(cat 20171119_2qbRzr-IUPQ.info_dir/20171119_2qbRzr-IUPQ.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171119_2qbRzr-IUPQ.info.json.25k.mp4"
+text="len $(cat 20171119_2qbRzr-IUPQ.info_dir/20171119_2qbRzr-IUPQ.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="中国经济持续低迷，社会变革在即，各种骗局层出不穷，骗子为何无处不在？为何还会有那么多人前赴后继上当受骗？如果没有贪欲，被骗的可能性会大大降低，骗财骗色的人就很难得手。对于一些政治骗子，无论是共产主义，还是反共，大家都应该提高警惕，中国的民主转型希望在十四亿人身上，绝不会在某一个或某几个人身上，如果没有抗争，就不会有民主。" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=2qbRzr-IUPQ" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20171122_c919yQBON2Q.info.json.vo.* \
+    20171122_c919yQBON2Q.info.json.ao.* \
+    20171122_c919yQBON2Q.info.json.bo.* \
+    20171122_c919yQBON2Q.info.json.wav 
+
+rm -fr               20171122_c919yQBON2Q.info_dir
+mkdir -p             20171122_c919yQBON2Q.info_dir
+mv 20171122_c919yQBON2Q.info.json 20171122_c919yQBON2Q.info.json.*         20171122_c919yQBON2Q.info_dir/
+
+
+
+mv  20171122_c919yQBON2Q.info_dir/20171122_c919yQBON2Q.info.json.jpg 20171122_c919yQBON2Q.info_dir/20171122_c919yQBON2Q.info.json.webm.mp4.jpg
+
+cat > 20171122_c919yQBON2Q.info_dir/_index.md << EOF3
++++
+title = " 20171122_c919yQBON2Q RFA专访秦伟平：《中国危机大逃亡》，千钧一发还是危言耸听？2017-11-22 "
+description = " 2017年11月，秦伟平新书《中国危机大逃亡》在美国出版，自由亚洲电台特别专访，主持人：景萱，嘉宾：秦伟平 （旅美经济学者，专栏作家）。__中国危机何时爆发？央行行长周小川为何在十九大期间警告中国明斯基时刻即将到来？秦伟平的危机论是否危言耸听？逃不出去的老百姓如何自保？欢迎收看本期特别节目。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20171122_c919yQBON2Q.info.json.webm.mp4" 
+text="len $(cat 20171122_c919yQBON2Q.info_dir/20171122_c919yQBON2Q.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20171122_c919yQBON2Q.info.json.25k.mp4"
+text="len $(cat 20171122_c919yQBON2Q.info_dir/20171122_c919yQBON2Q.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="2017年11月，秦伟平新书《中国危机大逃亡》在美国出版，自由亚洲电台特别专访，主持人：景萱，嘉宾：秦伟平 （旅美经济学者，专栏作家）。__中国危机何时爆发？央行行长周小川为何在十九大期间警告中国明斯基时刻即将到来？秦伟平的危机论是否危言耸听？逃不出去的老百姓如何自保？欢迎收看本期特别节目。" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=c919yQBON2Q" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
